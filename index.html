@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fa-solid fa-graduation-cap logo-icon"></i>
+        <span>CampusTrack</span>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a>
+        <a href="#"><i class="fa-solid fa-calendar-days"></i> Timetable</a>
+        <a href="#"><i class="fa-solid fa-book-open"></i> Subjects</a>
+        <a href="#"><i class="fa-solid fa-award"></i> Exam Marks</a>
+        <a href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <div class="user-chip">
+          <div class="avatar">SK</div>
+          <div class="user-meta">
+            <strong>Sandeep Kohli</strong>
+            <span>Roll: 2026CS108</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h2>Student Dashboard</h2>
+          <p>Welcome back, Sandeep! Here is your academic overview.</p>
+        </div>
+        <div class="quick-status">
+          <span class="term-badge">Semester 5 • 2026</span>
+        </div>
+      </header>
+
+      <!-- Metric Stat Cards -->
+      <section class="stats-row">
+        <div class="stat-card">
+          <div class="stat-icon attendance"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <div class="stat-info">
+            <span class="label">Overall Attendance</span>
+            <span class="val">89.4%</span>
+            <span class="sub text-success">Good standing (&gt;75%)</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon gpa"><i class="fa-solid fa-star"></i></div>
+          <div class="stat-info">
+            <span class="label">Current CGPA</span>
+            <span class="val">8.85 / 10</span>
+            <span class="sub text-primary">Top 10% in batch</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon subjects"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="stat-info">
+            <span class="label">Active Subjects</span>
+            <span class="val">6 Courses</span>
+            <span class="sub">22 Credits registered</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Two-column grid -->
+      <div class="content-grid">
+        <!-- Timetable & Courses -->
+        <div class="grid-card">
+          <h3><i class="fa-solid fa-calendar-week"></i> Today's Schedule (Tuesday)</h3>
+          <ul class="schedule-list">
+            <li class="schedule-item">
+              <span class="time">09:00 - 10:30 AM</span>
+              <div class="details">
+                <strong>Data Structures & Algorithms</strong>
+                <span>Hall 302 • Prof. Sharma</span>
+              </div>
+              <span class="status-pill live">Ongoing</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">11:00 - 12:30 PM</span>
+              <div class="details">
+                <strong>Database Management Systems</strong>
+                <span>Lab 4 • Dr. Patel</span>
+              </div>
+              <span class="status-pill upcoming">Upcoming</span>
+            </li>
+            <li class="schedule-item">
+              <span class="time">02:00 - 04:00 PM</span>
+              <div class="details">
+                <strong>Web Development Lab</strong>
+                <span>Systems Lab 1</span>
+              </div>
+              <span class="status-pill upcoming">Upcoming</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Recent Marks -->
+        <div class="grid-card">
+          <h3><i class="fa-solid fa-list-check"></i> Recent Exam Marks</h3>
+          <table class="marks-table">
+            <thead>
+              <tr>
+                <th>Subject</th>
+                <th>Exam</th>
+                <th>Score</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web Technologies</td>
+                <td>Mid Term</td>
+                <td>48 / 50</td>
+                <td><span class="grade grade-a">A+</span></td>
+              </tr>
+              <tr>
+                <td>Data Structures</td>
+                <td>Mid Term</td>
+                <td>44 / 50</td>
+                <td><span class="grade grade-a">A</span></td>
+              </tr>
+              <tr>
+                <td>Operating Systems</td>
+                <td>Mid Term</td>
+                <td>42 / 50</td>
+                <td><span class="grade grade-b">B+</span></td>
+              </tr>
+              <tr>
+                <td>Computer Networks</td>
+                <td>Quiz 2</td>
+                <td>19 / 20</td>
+                <td><span class="grade grade-a">A+</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
